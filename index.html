@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and Layouting Workshop</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-logo"><img src="rubberduck-logo.png" alt="Rubber Duck Logo"> Rubber Duck knows all, sees all...</div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#duck">Talk to the duck</a></li>
+        <li><a href="#emergency">Emergency Kit</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+    <div class="header-content">
+      <h1>Hello World!</h1>
+      <p> ..and hello you! This is my workshop layouting (with a dash of Javascript) project. 
+        I have now created my first little blog (not counting the primer ;) )! 
+        In the process I got to learn more concepts and resources, that will
+        help me along the coding Boot Camp. Let's see if you can find some hidden
+        surprises in this page!
+      </p>
+    </div>
+  </header>
+  <main>
+    <section id="duck">
+      <div class="duck-left">
+        <h2>This is the duck section!</h2>
+        <p>
+          I have no idea what this whole Rubber Duck debugging is all about, do you?
+          In any case, I figured a text filler that isn't Lorem Ipsum would be a good
+          change of pace to fill this area! Oh, you're still here? I'm having a blast
+          writing this and hope it can elicit some giggles on your side too. So how about
+          you do a little dance on camera during the workshop presentation to let me know
+          you actually came this far? :D
+        </p>
+        <button type="button" class="duck-btn">What does the duck say?</button>
+      </div>
+      <div class="duck-right">
+        <a href="https://rubberduckdebugging.com/" title="Rubber duck debugging"><img src="https://lilalu-shop.com/media/image/35/9c/a5/lilalu-quietscheente-gelb-yellow-rubber-duck-HL.png" alt="A yellow rubber duck"></a>
+      </div>
+    </section>
+    <section id="emergency">
+      <h2>In case of emergency, click on:</h2>
+      <div class="grid-container">
+        <a href="https://discordapp.com/channels/641221910146842644/641593560394760200" title="To Discord Student Help">
+            <div class="grid-item">Discord Student Help</div>
+        </a>
+        <a href="https://stackoverflow.com/" title="To Stack Overflow">
+            <div class="grid-item">Stack Overflow</div>
+        </a>
+        <a href="https://developer.mozilla.org" title="To Mozilla Documents">
+            <div class="grid-item">MDN WebDocs</div></a>
+        <a href="https://www.w3schools.com/" title="To W3"><div class="grid-item">W3</div>
+        </a>
+        <a href="https://medium.com/" title="To Medium">
+            <div class="grid-item">Medium</div>
+        </a>
+        <a href="https://www.codenewbie.org/podcast" title="To Codenewbie podcasts">
+            <div class="grid-item">Podcasts</div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer id="contact">
+    <h2>Contact us</h2>
+    <input type="text" placeholder="Name">
+    <textarea placeholder="Write your message" cols="30" rows="10" maxlength="500"></textarea>
+    <button type="button">Submit</button>
+    <div class="creator">
+      <p>Proudly created by <em>Lilian</em></p>
+      <a href="https://github.com/forgerlil" title="Creator's Github"><img src="../cookbook-bootstrap/github.svg" alt="Github logo"></a>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
