@@ -121,13 +121,21 @@ header {
     position: relative;
 }
 
-.duck-right img {
+.duck-right a {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.duck-right img {
     height: 15vw;
     width: 15vw;
+}
+
+.duck-right figcaption {
+    padding-top: 8px;
+    text-align: center;
 }
 
 #emergency {
@@ -164,6 +172,11 @@ header {
     transition: transform .1s;
 }
 
+.grid-item:active {
+    transform: translate(-1px, -1px);
+    box-shadow: 2px 2px 5px rgba(0,0,0,.7);
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -180,15 +193,58 @@ footer input,
 footer textarea {
     margin-bottom: 1.3rem;
     width: 30%;
+    border-radius: 5px;
+    border: solid 2px transparent;
+    padding: .5em;
+    font-size: 1em;
+}
+
+
+footer input:focus,
+footer textarea:focus {
+    outline: black;
+    border: solid 2px black;
+}
+
+footer input {
+    padding: .5em;
+    font-size: 1em;
 }
 
 footer textarea {
     resize: none;
-}    
+}
 
 footer button {
+    border-top: 2rem;
     height: 2rem;
     width: 10rem;
+    border-radius: 5px;
+    outline: none;
+    border: solid 2px transparent;
+    background-color: #FFF;
+    color: #5F7A61;
+}
+
+footer button:hover {
+    box-shadow: 2px 2px 2px rgba(0,0,0,.7);
+}
+
+footer button:active {
+    box-shadow: inset 2px 2px 1px rgba(0,0,0,.7);
+    border: none;
+}
+
+.submit-error-wrapper1,
+.submit-error-wrapper2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.submit-error-wrapper1 *,
+.submit-error-wrapper2 * {
+    padding: 3px 0;
 }
 
 .creator {
@@ -201,3 +257,4 @@ footer button {
 .creator > * {
     margin-bottom: 15px;
 }
+

@@ -10,10 +10,10 @@
 </head>
 <body>
   <nav>
-    <div class="nav-logo"><img src="rubberduck-logo.png" alt="Rubber Duck Logo"> Rubber Duck knows all, sees all...</div>
+    <div class="nav-logo"><a href="https://forgerlil.github.io/html-css-workshop/" title="Home"><img src="rubberduck-logo.png" alt="Rubber Duck Logo"></a> Rubber Duck knows all, sees all...</div>
     <div class="nav-links">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="https://forgerlil.github.io/html-css-workshop/">Home</a></li>
         <li><a href="#duck">Talk to the duck</a></li>
         <li><a href="#emergency">Emergency Kit</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -40,13 +40,22 @@
           In any case, I figured a text filler that isn't Lorem Ipsum would be a good
           change of pace to fill this area! Oh, you're still here? I'm having a blast
           writing this and hope it can elicit some giggles on your side too. So how about
-          you do a little dance on camera during the workshop presentation to let me know
-          you actually came this far? :D
+          you say or write on chat "Read all the way" and do a little dance on camera 
+          during the workshop presentation to let me know you actually came this far?
+        </p>
+        <p>
+          Now, have fun squeezing the duck! It's ok, he likes the attention :D
         </p>
         <button type="button" class="duck-btn">What does the duck say?</button>
       </div>
       <div class="duck-right">
-        <a href="https://rubberduckdebugging.com/" title="Rubber duck debugging"><img src="https://lilalu-shop.com/media/image/35/9c/a5/lilalu-quietscheente-gelb-yellow-rubber-duck-HL.png" alt="A yellow rubber duck"></a>
+        <a href="https://rubberduckdebugging.com/" title="Rubber duck debugging">
+          <figure>
+            <img src="https://lilalu-shop.com/media/image/35/9c/a5/lilalu-quietscheente-gelb-yellow-rubber-duck-HL.png" alt="A yellow rubber duck">
+            <figcaption>Take me to the duck!</figcaption>
+          </figure>
+        </a>
+      </div>
       </div>
     </section>
     <section id="emergency">
@@ -54,8 +63,8 @@
       <div class="grid-container">
         <a href="https://discordapp.com/channels/641221910146842644/641593560394760200" title="To Discord Student Help">
             <div class="grid-item">Discord Student Help</div>
-        </a>
-        <a href="https://stackoverflow.com/" title="To Stack Overflow">
+        </a> <!-- https://stackoverflow.com/ -->
+        <a href="#emergency" title="To Stack Overflow">
             <div class="grid-item">Stack Overflow</div>
         </a>
         <a href="https://developer.mozilla.org" title="To Mozilla Documents">
@@ -73,9 +82,12 @@
   </main>
   <footer id="contact">
     <h2>Contact us</h2>
-    <input type="text" placeholder="Name">
-    <textarea placeholder="Write your message" cols="30" rows="10" maxlength="500"></textarea>
-    <button type="button">Submit</button>
+    <input class="contact-name" type="text" placeholder="Your name" required>
+    <textarea class="contact-textarea" placeholder="Write your message" cols="30" rows="10" maxlength="500" required></textarea>
+    <p class="textarea-validation"></p>
+    <button type="button" class="contact-submit-btn">Submit</button>
+    <div class="submit-error-wrapper1"></div>
+    <div class="submit-error-wrapper2"></div>
     <div class="creator">
       <p>Proudly created by <em>Lilian</em></p>
       <a href="https://github.com/forgerlil" title="Creator's Github"><img src="../cookbook-bootstrap/github.svg" alt="Github logo"></a>
